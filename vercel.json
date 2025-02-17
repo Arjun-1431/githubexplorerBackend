@@ -1,24 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "server.js"
-      }
-    ],
-    "env": {
-        "PORT":"5000",
-        "MONGO_URI":"mongodb://localhost:27017/github_clone",
-        "GITHUB_API_KEY":"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",
-        "GITHUB_CLIENT_ID":"Ov23liD4tKV5L3RXrpd7",
-        "GITHUB_CLIENT_SECRET":"cce38127645bfd55ebdd682b4a9958a0bc50d70f",
-        "CLIENT_BASE_URL":"http://localhost:3000"
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
     }
-  }
-  
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
+}
