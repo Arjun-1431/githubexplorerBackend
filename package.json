@@ -6,6 +6,18 @@
 	"scripts": {
 		"dev": "nodemon backend/server.js"
 	},
+	"builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
 	"type": "module",
 	"keywords": [],
 	"author": "",
